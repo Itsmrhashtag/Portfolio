@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="free-awsome.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!--Backgroud Animation start-->
+    <div class="bg-animation-effect">
+    </div>
+    <!--Backgroud Animation end-->
+    <!-- Overlay Effect Start-->
+    <div class="overlay-effect">
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+    </div>
+    <!-- Overlay Effect End-->
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <!-- nav-->
+                <nav class="nav">
+                    <div class="nav-inner">
+                        <ul>
+                            <li><a href="#" class="nav-item">about</a></li>
+                            <li><a href="#" class="nav-item">portfolio</a></li>
+                            <li><a href="#" class="nav-item">contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header End-->
+    <!-- About Section Start-->
+    <section class="about-section">
+        <div class="container">
+            <div class="row min-vh-100">
+                <div class="about-content">
+                      <img src="image/my_photo-removebg-preview.png" alt="profile-img">
+                      <h1>Hi, My Name is Pushpraj Kushwaha.</h1>
+                      <p>I'm a <span>frontend Developer</span> living in Jabalpur, India. I make web applications using <span>html</span>, <span>css</span>, <span> javascript</span> and <span>bootstarp</span>. Check my latest work on the <a href="#">portfolio page</a>. Want to talk about a project? You can get in touch with me <a href="#">here</a>. </p>
+                       <h2>skills</h2>
+                       <div class="skills">
+                          <div class="skill-item">HTML</div>
+                          <div class="skill-item">CSS</div>
+                          <div class="skill-item">Kotlin</div>
+                          <div class="skill-item">Java</div>
+                          <div class="skill-item">C++</div>
+                          <div class="skill-item">PHP</div>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-section sec-padding hidden">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>recent works</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-filter">
+                    <button type="button" title="Show All Works" class="portfolio-filter-btn " data-filter="all">all</button>
+                    <button type="button" title="Filter by Front-End" class="portfolio-filter-btn active" data-filter="front-end">front-end</button>
+                    <button type="button" title="Filter by Back-End" class="portfolio-filter-btn" data-filter="back-end">back-end</button>
+                    <button type="button" title="Filter by Bootstrap" class="portfolio-filter-btn" data-filter="bootstrap">bootstrap</button>
+                </div>
+                <div class="filter-status">
+                    <p></p>
+                </div>
+            </div>
+            <div class="row portfolio-items">
+                <!--portfolio item start-->
+                <div class="portfolio-item" data-category="front-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="image\mountains.jpg" alt="thumbmnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Minor Project</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa, iure amet repellat explicabo, magni nemo commodi nobis distinctio maiores quisquam dolore voluptas in excepturi? Deserunt corrupti eum debitis voluptate.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span> 4 Dec 2020</span></p>
+                            <p>Technologies Used - <span> Html, Css</span></p>
+                            <p>Role - <span>Front-End</span></p>
+                            <p>Veiw Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item end-->
+
+                <!--portfolio item start-->
+                <div class="portfolio-item" data-category="front-end,bootstarp">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="image/lights.jpg" alt="thumbmnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Major Project</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa, iure amet repellat explicabo, magni nemo commodi nobis distinctio maiores quisquam dolore voluptas in excepturi? Deserunt corrupti eum debitis voluptate.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span> 4 Dec 2020</span></p>
+                            <p>Technologies Used - <span> Bootstrap</span></p>
+                            <p>Role - <span>Front-End</span></p>
+                            <p>Veiw Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item end-->
+
+                <!--portfolio item start-->
+                <div class="portfolio-item" data-category="back-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="image\nature.jpg"alt="thumbmnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Backend  Project</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa, iure amet repellat explicabo, magni nemo commodi nobis distinctio maiores quisquam dolore voluptas in excepturi? Deserunt corrupti eum debitis voluptate.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span> 4 Dec 2020</span></p>
+                            <p>Technologies Used - <span> Html,PHP</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <p>Veiw Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item end-->
+
+                <!--portfolio item start-->
+                <div class="portfolio-item" data-category="front-end,bootstarp">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="image\cars1.jpg" alt="thumbmnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Backend Project</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa, iure amet repellat explicabo, magni nemo commodi nobis distinctio maiores quisquam dolore voluptas in excepturi? Deserunt corrupti eum debitis voluptate.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span> 4 Dec 2020</span></p>
+                            <p>Technologies Used - <span> Html,css,bootstrap 4</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <p>Veiw Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item end-->
+
+                <!--portfolio item start-->
+                <div class="portfolio-item" data-category="front-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="image\cars2.jpg" alt="thumbmnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">App project</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa, iure amet repellat explicabo, magni nemo commodi nobis distinctio maiores quisquam dolore voluptas in excepturi? Deserunt corrupti eum debitis voluptate.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span> 4 Dec 2020</span></p>
+                            <p>Technologies Used - <span> java</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <p>Veiw Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--portfolio item end-->
+
+                <!--portfolio item start-->
+                <div class="portfolio-item" data-category="front-end">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="image\cars3.jpg" alt="thumbmnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">Project</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa, iure amet repellat explicabo, magni nemo commodi nobis distinctio maiores quisquam dolore voluptas in excepturi? Deserunt corrupti eum debitis voluptate.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span> 4 Dec 2020</span></p>
+                            <p>Technologies Used - <span> Html,css,bootstrap 4</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <p>Veiw Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item end-->
+
+                <!--portfolio item start-->
+                <div class="portfolio-item" data-category="front-end,bootstarp">
+                    <div class="portfolio-item-thumbnail">
+                        <img src="image\people1.jpg" alt="thumbmnail">
+                        <button type="button" class="btn more-info-btn">more info</button>
+                    </div>
+                    <h3 class="portfolio-item-title">App Project</h3>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa, iure amet repellat explicabo, magni nemo commodi nobis distinctio maiores quisquam dolore voluptas in excepturi? Deserunt corrupti eum debitis voluptate.</p>
+                        </div>
+                        <div class="general-info">
+                            <p>Created - <span> 4 Dec 2020</span></p>
+                            <p>Technologies Used - <span>kotlin</span></p>
+                            <p>Role - <span>Back-End</span></p>
+                            <p>Veiw Online- <span><a href="#" target="_blank">www.domain.com</a></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--portfolio item end-->
+            </div>
+        </div>
+    </section>
+    <!--Contact Section Start-->
+    <section class="contact-section sec-padding min-vh-100 hidden">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>contact me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui rerum cumque tenetur laboriosam cum voluptates aliquam possimus esse distinctio asperiores deleniti labore, praesentium odio architecto, deserunt quis dignissimos ullam.</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <p>Email me on <span>example@gmail.com</span></p>
+                    </div>
+                    <div class="contact-info-item">
+                        <p class="social-links">
+                            <span>Find me on</span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </p>
+                    </div>
+                    <button type="button" class="btn toggle-contact-form-btn">Send message</button>
+                </div>
+                <!--Contact Form Start-->
+                <div class="contact-form">
+                    <div class="contact-form-inner">
+                        <div class="contact-form-container">
+                            <button type="button" class="close-btn toggle-contact-form-btn"></button>
+                            <form>
+                                <div class="row">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Your Name" class="input-control">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Your Email" class="input-control">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Subject" class="input-control">
+                                    </div>
+                                    <div class="input-group">
+                                        <textarea placeholder="Message" class="input-control"></textarea>
+                                    </div>
+                                    <div class="input-group">
+                                        <button type="submit" class="btn btn-submit">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Contact Form End-->
+            </div>
+        </div>
+    </section>
+    <!--Contact Section End-->
+    <!--Portfolio Item Details Popup Start-->
+    <div class="portfolio-popup">
+        <div class="pp-overlay"></div>
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <h2 class="pp-counter">
+                    </h2>
+                    <button type="button" title="close" class="close-btn pp-close-btn"></button>
+                    <div class="pp-thumbnail">
+                        <img src="image/Shubh-Mangal-Saavdhan-Hindi-2017-20170905064711-500x500.jpg" alt="pp-thumbnail">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body">
+                </div>
+                <div class="pp-footer">
+                    <div class="pp-footer-left hidden">
+                        <button type="button" title="Prev Work" class="btn pp-prev-btn">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <h3></h3>
+                        <img src="image/mountains.jpg" alt="prev work thumbnail">
+                    </div>
+                    <div class="pp-footer-right hidden">
+                        <button type="button" title="Next Work" class="btn pp-next-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <h3></h3>
+                        <img src="image/nature.jpg" alt="next work thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio Item Details Popup End-->
+
+<script src="script.js"></script>
+</body>
+</html>
