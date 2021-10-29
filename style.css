@@ -70,6 +70,12 @@ ul{
 .flex-end{
     justify-content: flex-end;
 }
+section{
+    display: none;
+}
+section.active{
+    display: block;
+}
 /*Buttons*/
 button{
     font-family: inherit;
@@ -208,9 +214,51 @@ align-content: space-evenly;
     z-index: 99;
     visibility: hidden;
 }
+.overlay-effect.active{
+    visibility: visible;
+    display: flex;
+    flex-direction: column-reverse;
+}
 .overlay-effect-item{
     height: 10vh;
     background-color: var(--dark-light);
+    transition: all 0.5s ease;
+}
+.overlay-effect-item:nth-child(odd){
+    transform: translateX(-100%);
+}
+.overlay-effect-item:nth-child(even){
+    transform: translateX(100%);
+}
+.overlay-effect.active .overlay-effect-item{
+    transform: translateY(0);
+}
+.overlay-effect-item:nth-child(2){
+    transition-delay: 0.05s;
+}
+.overlay-effect-item:nth-child(3){
+    transition-delay: 0.10s;
+}
+.overlay-effect-item:nth-child(4){
+    transition-delay: 0.15s;
+}
+.overlay-effect-item:nth-child(5){
+    transition-delay: 0.20s;
+}
+.overlay-effect-item:nth-child(6){
+    transition-delay: 0.25s;
+}
+.overlay-effect-item:nth-child(7){
+    transition-delay: 0.30s;
+}
+.overlay-effect-item:nth-child(8){
+    transition-delay: 0.05s;
+}
+.overlay-effect-item:nth-child(9){
+    transition-delay: 0.05s;
+}
+.overlay-effect-item:nth-child(10){
+    transition-delay: 0.05s;
 }
 /* Header*/
 .header{
@@ -291,11 +339,22 @@ align-content: space-evenly;
     overflow-y: auto;
     visibility: hidden;
 }
+.header .nav.open{
+    visibility: visible;
+}
 .header .nav-inner{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+.header .nav.open .nav-inner{
+    transition-delay: 0.5s;
+    opacity: 1;
+    transform: scale(1);
 }
 .header .nav-inner ul{
     padding: 80px 0;

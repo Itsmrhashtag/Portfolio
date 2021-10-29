@@ -20,12 +20,17 @@ navToggler.addEventListener("click", toggleNavbar);
 
 function toggleNavbar(){
     navToggler.classList.toggle("active");
-    // toggleOverlayEffect();
+    document.querySelector(".nav").classList.toggle("open");
+    toggleOverlayEffect();
+    toggleBodyScrolling();
 }
+/*--------Hide & Show Section-----------*/
+
+document.addEventListener()
 /* -------Toggle Overlay Effect-------- */
-// function toggleOverlayEffect(){
-//     document.querySelector(".overlay-effect").classList.toggle("active");
-// }
+function toggleOverlayEffect(){
+    document.querySelector(".overlay-effect").classList.toggle("active");
+}
 /*-------Toogle Body Scrolling---------*/
 function toggleBodyScrolling(){
     document.body.classList.toggle("hide-scrolling");
