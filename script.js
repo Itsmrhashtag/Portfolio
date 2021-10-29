@@ -1,4 +1,10 @@
 
+window.addEventListener("load", () =>{
+    document.querySelector(".page-loader").classList.add("slide-out-right");
+    setTimeout(() => {
+        document.querySelector(".page-loader").style.display = "none";
+    },1000);
+});
 
 
 /* -------Bg Animation Effect-------*/
@@ -26,7 +32,33 @@ function toggleNavbar(){
 }
 /*--------Hide & Show Section-----------*/
 
-document.addEventListener()
+document.addEventListener("click", (e) =>{
+    if(e.target.classList.contains("link-item") && e.target.hash !==""){
+        const hash = e.target.hash;
+        if(e.target.classList.contains("nav-item")){
+            activeSection(hash);
+            toggleNavbar();
+        }
+        else{
+            toggleBodyScrolling();
+            toggleOverlayEffect();
+            document.querySelector(".nav-toggler").classList.add("toggle-hide");
+            setTimeout(() => {
+                activeSection(hash);
+                toggleOverlayEffect();
+                toggleBodyScrolling();
+                document.querySelector(".nav-toggler").classList.remove("toggle-hide");
+            },950)
+        }
+    }
+});
+
+function activeSection(sectionId){
+    document.querySelector("section.active").classList.remove("active");
+    document.querySelector(sectionId).classList.add("active");
+    window.scrollTo(0,0);
+}
+
 /* -------Toggle Overlay Effect-------- */
 function toggleOverlayEffect(){
     document.querySelector(".overlay-effect").classList.toggle("active");
